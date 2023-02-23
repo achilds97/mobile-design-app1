@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:layout_centerInParent="true">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:hint="First Name"
+        android:id = "@+id/first_name_et"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:hint="Middle Name"
+        android:id = "@+id/middle_name_et"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:hint="Last Name"
+        android:id = "@+id/last_name_et"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Take a Picture"
+        android:id = "@+id/picture_bt" />
+
+    <ImageView
+        android:id="@+id/image_holder_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/camera_solid"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Next"
+        android:enabled="false"
+        android:id = "@+id/next_bt"/>
+
+</LinearLayout>
